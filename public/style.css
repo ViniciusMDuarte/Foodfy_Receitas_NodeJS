@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+#header {
+    padding: 38px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 200px 1fr;
+    line-height: 19px;
+}
+
+#header h1 a img {
+    width: 91px;
+    height: 27px;
+}
+#header nav ul {
+    display: flex;
+}
+
+#header nav ul li {
+    margin-left: 30px;
+    list-style: none;
+  
+}
+
+#header nav ul li a {
+    text-decoration: none;
+    color: #111111;
+    font-weight: 400;
+    font-size: 1em;
+  
+}
+
+/* RESPONSIVE HEADER  */
+
+@media screen and (max-width: 375px) {
+    
+    #header nav ul {
+        display: inline-block;
+        margin-left: 0; 
+
+    }
+
+
+  }
+
+#intro {
+    background-color: #FBDFDB;
+    border-radius: 30px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+#intro .titulo {
+    width: 305px;
+    margin-top: 60px;
+ 
+}
+
+#intro .titulo h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#intro .titulo p {
+    font-size: 1,125em;
+    line-height: 1.5em;
+    color: #000;
+    opacity: 0.7;
+}
+
+#intro .titulo-img {
+    justify-self:center;
+}
+
+
+/* RESPONSIVE INTRO  */
+
+@media screen and (max-width: 375px) {
+    #intro .titulo {
+      margin-top: 0px;
+      margin-bottom: 30px;
+      padding: 10px;
+      
+    }
+
+    #intro .titulo h2 {
+        font-size: 2.5em;
+    }
+
+
+  }
+
+
+
+#mais-acessadas h3 {
+    margin: 50px 0 20px 0;
+    color: #111111;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#mais-acessadas .produtos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+#mais-acessadas .produtos-container .produtos {
+    margin-bottom: 10px;
+}
+
+
+#mais-acessadas .produtos-container .produtos img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#mais-acessadas .produtos-container .produtos p {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color:#111111;
+    font-size: 1,125‬em;
+    font-weight: 400;
+}
+
+#mais-acessadas .produtos-container .produtos span {
+    font-size: .875em;
+    color: #777777;
+}
+
+
+
+
+/* RESPONSIVE + ACESSADAS  */
+
+/* @media screen and (max-width: 375px) {
+
+    #mais-acessadas h3 {
+        margin-bottom: 30px;
+    }
+
+    #mais-acessadas .produtos-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+} */
+
+
+
+#footer-conteudo {
+    margin-top: 50px;
+    background-color: #EEEEEE;
+    padding: 30px;
+}
+
+#footer-conteudo p {
+    text-align: center;
+    color: #999999;
+    font-size: .875em;
+}
+
+
+
+@media only screen and (max-width: 414px) {
+    
+    #intro .titulo {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        
+      }
+
+    #mais-acessadas .produtos-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #mais-acessadas .produtos-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+
