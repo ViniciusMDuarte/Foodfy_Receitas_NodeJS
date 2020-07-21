@@ -91,7 +91,6 @@ body {
     justify-self:center;
 }
 
-
 /* RESPONSIVE INTRO  */
 
 @media screen and (max-width: 375px) {
@@ -108,7 +107,6 @@ body {
 
 
   }
-
 
 
 #mais-acessadas h3 {
@@ -130,7 +128,7 @@ body {
     cursor: pointer;
 }
 
-#mais-acessadas .produtos-container .produtos:hover {
+#mais-acessadas .produtos-container .produtos img:hover {
     opacity: 0.7;
 }
 

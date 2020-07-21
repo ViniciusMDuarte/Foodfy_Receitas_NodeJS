@@ -6,15 +6,16 @@
 {% endblock %}
 
 {% block title %}
-    <title>Receitas -Foodfy</title>
+    <title>Descrição Receitas - Foodfy</title>
 {% endblock %}
 
 {% block content %}
+<h1> Descrição da Receita</h1>
 
-            <div class="produtos-container">
+ <div class="produtos-container">
          
                 {% for item in items %}
-                    <div class="produtos" >
+                    <div class="produtos" id="{{item.id}}" >
                         <img src="{{item.image}}" alt="{{item.title}}">
                         <p>{{item.title}}</p>
                         <span>{{item.author}}</span>
@@ -22,6 +23,5 @@
                 {% endfor %}
 
             </div>
-           
-        </section>
+          
 {% endblock %}
