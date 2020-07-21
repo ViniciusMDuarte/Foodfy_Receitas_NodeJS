@@ -1,7 +1,3 @@
-
-
-
-
 <h1 align="center"> 
-    <img src="/screenshot_foodfy.jpg"> 
+    <img src="public/screeshot_foodfy.JPG" alt="Screenshot - Foodfy" > 
 </h1>
