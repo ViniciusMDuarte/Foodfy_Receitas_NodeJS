@@ -1,0 +1,45 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen" />
+{% endblock %}
+
+
+
+{% block content %}
+        <section id="intro">
+            <div class="titulo">
+                <h2>
+                    As melhores receitas
+                </h2>
+                <p>Aprenda a construir os melhores pratos
+                    com receitas criadas por profissionais
+                    do mundo inteiro. </p>
+            </div>
+            <div class="titulo-img">
+                <img src="/chef.png" alt="Chef">
+            </div>
+        </section>
+
+        <section id="mais-acessadas">
+            <h3>
+                Mais acessadas
+            </h3>
+
+            <div class="produtos-container">
+         
+                {% for item in items %}
+                    <div class="produtos" >
+                        <img src="{{item.image}}" alt="{{item.title}}">
+                        <p>{{item.title}}</p>
+                        <span>{{item.author}}</span>
+                    </div>
+                {% endfor %}
+         
+
+            </div>
+           
+        </section>
+{% endblock %}
+   
