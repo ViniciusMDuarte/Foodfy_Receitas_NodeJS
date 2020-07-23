@@ -21,14 +21,25 @@
 }
 
 .ingredientes > h2 {
-    margin: 30px 0 30px 0
+    margin: 30px 0 20px 0
 }
-
+.ingredientes > h2::after {
+    content:"mostrar";
+    font-size: 0.75em;
+    cursor: pointer;
+    color: #777777;
+    margin-left: 10px;
+}
 .ingredientes-lista > li {
-    line-height: 1.5em;
+    color: #444444;
+    font-size: 1.125em;
+    line-height: 1.75em;
     list-style: none;
 }
 
+ingredientes-lista  {
+    margin-bottom: 50px;
+}
 .ingredientes > p {
     color: #444444;
     font-size: 1.125em;
