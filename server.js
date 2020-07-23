@@ -13,7 +13,8 @@ server.set("view engine", "njk")
 
 
 nunjucks.configure('views', {
-    express: server
+    express: server,
+    autoescape: false
 })
 
 
@@ -30,26 +31,17 @@ server.get("/receitas", function(req, res) {
 })
 
 server.get("/receita-descricao", function(req, res) {
+    
     return res.render("receita-descricao", {items: dataRecipies})
 })
 
-server.get('/receita-descricao/:index', function(req, res) {
-    const recipeId = req.params.index
+server.get("/receita-descricao/:index", function(req, res) {
+    const recipeIndex = req.params.index
     
-    if(!dataRecipies[recipeId]) {
-       return res.send('Recipe not found!')
-    }
+    res.render("receita-descricao", { items: dataRecipies[recipeIndex] });
 
-    return res.render('receita-descricao', {item: dataRecipies[recipeId]})
 })
-
-server.use(function(req, res) {
-    res.status(404).render("not-found")
-})
-
-
 
 server.listen(5000,function() {
     console.log('server is up')
 })
-

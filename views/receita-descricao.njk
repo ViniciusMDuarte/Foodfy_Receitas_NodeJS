@@ -1,7 +1,7 @@
 {% extends "layout.njk" %}
 
 {% block head %}
-    <link rel="stylesheet" type="text/css" href="/receitas.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/receitas-descricao.css" media="screen" />
     
 {% endblock %}
 
@@ -10,18 +10,47 @@
 {% endblock %}
 
 {% block content %}
-<h1> Descrição da Receita</h1>
 
- <div class="produtos-container">
-         
-                {% for item in items %}
-                    <div class="produtos" id="{{item.id}}" >
-                        <img src="{{item.image}}" alt="{{item.title}}">
-                        <p>{{item.title}}</p>
-                        <span>{{item.author}}</span>
-                    </div>
-                {% endfor %}
+<section class="produtos-descricao" id="{{item.id}}">
 
-            </div>
-          
+   
+    <img src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png" alt="Imagem Burger">
+    
+    <h1>
+        Triplo bacon burger
+    </h1>
+
+    <p>
+        por Jorge Relato
+    </p>
+
+    <div class="ingredientes">
+        <h2>
+            Ingredientes
+        </h2>
+
+        <ul class="ingredientes-lista">
+            <li>●   3 kg de carne moída (escolha uma carne magra e macia);</li> 
+            <li>●   300 g de bacon moído;</li> 
+            <li>●   1 ovo; </li> 
+            <li>●   3 colheres (sopa) de farinha de trigo; </li>   
+            <li>●   3 colheres (sopa) de tempero caseiro: feito com alho, sal, cebola, pimenta e cheiro verde processados no liquidificador;</li>   
+            <li>●   30 ml de água gelada;</li>   
+        </ul>
+
+        <h2>
+            Modo Preparo
+        </h2>
+
+        <h2>
+            Informações adicionais
+        </h2>
+
+        <p>Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres!</p>
+
+        <p>Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açogueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijom tomates e alface.</p>
+
+
+    </div>
+
 {% endblock %}
