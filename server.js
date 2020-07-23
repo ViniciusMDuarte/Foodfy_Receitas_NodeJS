@@ -31,7 +31,7 @@ server.get("/receitas", function(req, res) {
 })
 
 server.get("/receita-descricao", function(req, res) {
-    
+
     return res.render("receita-descricao", {items: dataRecipies})
 })
 
