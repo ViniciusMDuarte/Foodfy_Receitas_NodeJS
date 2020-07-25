@@ -21,12 +21,12 @@ for (let [i,button] of buttons.entries()) {
         if(ingredients[i].classList.contains('hide')) {
             ingredients[i].classList.remove('hide')
             ingredients[i].classList.add('show')
-            button.innerHTML = "Mostrar"
+            button.innerHTML = "Esconder"
 
         } else {
             ingredients[i].classList.add('hide')
             ingredients[i].classList.remove('show')
-            button.innerHTML=" Esconder"
+            button.innerHTML="Mostar"
         }
     })
 }

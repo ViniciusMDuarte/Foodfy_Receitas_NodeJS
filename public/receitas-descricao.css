@@ -36,9 +36,19 @@
     list-style: none;
 }
 
-ingredientes-lista  {
-    margin-bottom: 50px;
+.ingredientes-lista,
+.ingredients-preparation,
+.ingredients-details  {
+    margin: 10px 0 20px 0;
 }
+
+.ingredientes-titulo,
+.ingredientes-preparo,
+.ingredientes-informacoes-adicionais {
+    margin-bottom: 10px;
+}
+
+
 .ingredientes > p {
     color: #444444;
     font-size: 1.125em;
