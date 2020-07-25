@@ -23,13 +23,12 @@
 .ingredientes > h2 {
     margin: 30px 0 20px 0
 }
-.ingredientes > h2::after {
-    content:"mostrar";
-    font-size: 0.75em;
+
+.ingredientes a {
+    color: red;
     cursor: pointer;
-    color: #777777;
-    margin-left: 10px;
 }
+
 .ingredientes-lista > li {
     color: #444444;
     font-size: 1.125em;
@@ -49,5 +48,30 @@ ingredientes-lista  {
 .ingredientes > p:first-of-type {
     margin-bottom: 28px;
 }
+
+.ingredientes-titulo,
+.ingredientes-preparo,
+.ingredientes-informacoes-adicionais {
+    display: flex;
+    align-items: center;
+   
+}
+
+.ingredientes-titulo a,
+.ingredientes-preparo a,
+.ingredientes-informacoes-adicionais a {
+    margin-left: 10px;
+    color: #777777;
+    font-size: 0.875em;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 
 

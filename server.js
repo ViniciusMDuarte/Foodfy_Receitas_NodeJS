@@ -33,11 +33,6 @@ server.get("/receitas", function(req, res) {
     return res.render("receitas", {items: dataRecipies})
 })
 
-// server.get("/receita-descricao", function(req, res) {
-
-//     return res.render("receita-descricao", {items: dataRecipies})
-// })
-
 
 server.get("/receita-descricao/:index", function(req, res) {
     const recipeIndex = req.params.index
